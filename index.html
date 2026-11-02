@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kristiana Chryselle Gamboa | IT Student Portfolio</title>
+<meta name="description" content="Portfolio of Kristiana Chryselle Gamboa, a third-year BSIT student at Bulacan State University interested in software development, UI/UX design, and software testing.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23b3202a'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3EKG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="logo" href="#home" aria-label="Kristiana Gamboa, home"><span>KG</span> Kristiana Gamboa</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="links" aria-label="Toggle menu">Menu</button>
+    <nav id="links" class="links" aria-label="Main">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="hi">Hello, I’m</p>
+      <h1>Kristiana Chryselle <span>Gamboa</span></h1>
+      <p class="lead">A third-year IT student and aspiring developer, interested in software development, UI/UX design, and software testing.</p>
+      <p class="motto">“A work in progress, with endless possibilities.”</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">View my projects</a>
+        <a class="btn" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <figure class="photo">
+      <img src="assets/images/profile.jpg" width="1200" height="1195" alt="Portrait of Kristiana Gamboa wearing a black shirt and red tie against a deep red backdrop">
+    </figure>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap two">
+    <h2>About me</h2>
+    <div class="prose">
+      <p>I’m a third-year BSIT student at Bulacan State University, based in Malolos, Bulacan. I’m interested in software development on both the frontend and the backend, and in the design and testing that make software easier to use and more reliable.</p>
+      <p>My experience so far comes from academic projects, including PlanIT and Code Blocks, where I worked on frontend and backend development. Alongside code, I’m drawn to UI/UX design, because a system should be clear to use as well as correct.</p>
+      <p>I’m still learning, and I treat each project as a chance to get better at building things that work well and look intentional.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec alt">
+  <div class="wrap two">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>Programming languages</dt><dd><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java</li><li>Python</li><li>PHP</li></ul></dd></div>
+      <div><dt>Frameworks and development</dt><dd><ul><li>React</li><li>Flutter</li></ul></dd></div>
+      <div><dt>Databases</dt><dd><ul><li>MySQL</li><li>Firebase</li></ul></dd></div>
+      <div><dt>UI/UX design</dt><dd><ul><li>Figma</li></ul></dd></div>
+      <div><dt>Tools and version control</dt><dd><ul><li>Git</li><li>GitHub</li></ul></dd></div>
+      <div><dt>Software testing</dt><dd><ul><li>Selenium</li><li>Pytest</li></ul></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="assets/images/planit.jpg" width="1400" height="737" alt="PlanIT sign-in page with a calendar preview showing schedule, lab, budget and proposal checks" loading="lazy">
+        <h3>PlanIT</h3>
+        <p class="type">Developed system and research project</p>
+        <p>An event planning system for the BulSU College of Information and Communications Technology. It checks proposed events against the academic calendar, matches them to a CICT lab, and plans budgets from past events before a proposal goes to the adviser.</p>
+        <p class="did"><strong>What I did:</strong> I built the backend, including the role-based sign-in for officers, committees, advisers, the Dean’s office and admins. I also wrote the logic that flags date conflicts with the academic calendar and suggests free dates, and set up the database tables for labs, budgets and proposals.</p>
+        <ul class="tags" aria-label="Roles"><li class="role">Backend</li></ul>
+        <ul class="tags" aria-label="Technologies"><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+      </article>
+      <article class="card">
+        <img src="assets/images/codeblocks.jpg" width="1400" height="737" alt="Code Blocks laboratory equipment borrowing system sign-in page" loading="lazy">
+        <h3>Code Blocks</h3>
+        <p class="type">Laboratory equipment inventory and borrowing system</p>
+        <p>A web system for tracking laboratory equipment such as microscopes, multimeters and laptops from request to return. It keeps available, borrowed, damaged and repair stock in agreement, limits approvals to laboratory personnel, and requires a condition report on every return.</p>
+        <p class="did"><strong>What I did:</strong> I worked with my group on the borrowing flow, from submitting a request to approval and release. I helped build the return step that records the equipment’s condition before stock is updated, and the secure sign-in page.</p>
+        <ul class="tags" aria-label="Roles"><li class="role">Frontend</li><li class="role">Backend</li></ul>
+        <ul class="tags" aria-label="Technologies"><li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      </article>
+      <article class="card">
+        <img src="assets/images/keaxdrift.jpg" width="1400" height="737" alt="Keax Drift sign-in screen with a dark sports car in a red-lit garage" loading="lazy">
+        <h3>Keax Drift</h3>
+        <p class="type">UI/UX midterm project · Figma prototype</p>
+        <p>A concept app for an automotive performance shop in Manila. Customers sign in to a personal garage, follow real-time build updates, and schedule test drives. The design uses a dark, high-contrast look with red accents to match car culture.</p>
+        <p class="did"><strong>What I did:</strong> I designed the interface with a classmate in Figma, including the sign-in screen, the layout and visual style, and the clickable prototype used for the midterm presentation.</p>
+        <ul class="tags" aria-label="Roles"><li class="role">UI/UX design</li></ul>
+        <ul class="tags" aria-label="Technologies"><li>Figma</li></ul>
+      </article>
+  </div>
+</section>
+
+<section id="education" class="sec alt">
+  <div class="wrap two">
+    <h2>Education</h2>
+    <div class="edu">
+      <h3>Bachelor of Science in Information Technology</h3>
+      <p>Bulacan State University</p>
+      <p class="muted">Third year</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <div class="wrap two">
+    <h2>Contact</h2>
+    <div>
+      <p class="prose">I’m happy to hear from you about projects, internships, or collaborations.</p>
+      <ul class="contact">
+        <li><span>Email</span><a href="mailto:kristiana.gamboa@gmail.com">kristiana.gamboa@gmail.com</a></li>
+        <li><span>Phone</span><a href="tel:+639430964215">0943 096 4215</a></li>
+        <li><span>GitHub</span><a href="https://github.com/kristianagamboa" target="_blank" rel="noopener">github.com/kristianagamboa</a></li>
+        <li><span>Location</span>Malolos, Bulacan, Philippines</li>
+      </ul>
+      <a class="btn primary" href="mailto:kristiana.gamboa@gmail.com">Send an email</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <strong>Kristiana Gamboa</strong>
+      <p class="muted">Still learning, still building.</p>
+    </div>
+    <p class="muted">© <span id="year">2026</span> Kristiana Chryselle Gamboa</p>
+    <p><a href="https://github.com/kristianagamboa" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:kristiana.gamboa@gmail.com">Email</a> · <a href="#top">Back to top</a></p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
